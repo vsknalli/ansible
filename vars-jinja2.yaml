@@ -1,0 +1,9 @@
+---
+ - hosts: mygroup1
+   gather_facts: false
+   vars:
+           username: senthilkumarveeranan 
+   tasks:
+           - name: Displying variable
+             debug: 
+                   msg: "{{ username }}"
