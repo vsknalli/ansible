@@ -1,5 +1,5 @@
 ---
- - hosts: prod
+ - hosts: mygroup1 
    become: True
    tasks: 
      - name: copy hosts file
