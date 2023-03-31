@@ -1,0 +1,11 @@
+---
+ - hosts: prod
+   become: True
+   tasks: 
+     - name: copy hosts file
+       copy:
+          src: /etc/hosts
+          dest: /tmp/hosts_backupfile
+          owner: root
+          group: root
+          backup: yes
