@@ -1,0 +1,11 @@
+---
+ - hosts: mygroup1
+   gather_facts: false
+   vars:
+           dict:
+                   key1: senthil
+                   key2: veeranan
+   tasks:
+           - name: Displying variable
+             debug: 
+                   msg: "{{ dict }}"
