@@ -1,6 +1,6 @@
 
-[mygroup1]
+[webservers]
 manage[1:2]
 
-[mygroup2]
+[prod]
 manage[3:4]

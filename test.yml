@@ -1,0 +1,10 @@
+- hosts: mhost1
+  become: True
+  vars:
+    dict:
+      key1: value1
+      key2: value2
+  tasks:
+  - name: Displying variable
+    debug:
+      msg: "{{ dict }}"

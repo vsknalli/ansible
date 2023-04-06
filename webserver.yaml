@@ -1,0 +1,12 @@
+- hosts: webservers
+  become: True
+  tasks:
+  - name: Installing httpd service
+    yum:
+      name: httpd
+      state: present
+  - name: Staring andbling httpd service
+    service:
+      name: httpd
+      state: started
+      enabled: yes
