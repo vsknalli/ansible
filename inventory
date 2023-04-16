@@ -1,6 +1,5 @@
-
-[webservers]
-manage[1:2]
-
 [prod]
-manage[3:4]
+mhost-1.example.com     
+mhost-2.example.com    
+mhost-3.example.com  
+

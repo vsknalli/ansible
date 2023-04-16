@@ -10,3 +10,15 @@
       name: httpd
       state: started
       enabled: yes
+      
+  - name: install one specific version of Apache
+    yum:
+      name: httpd-2.2.29-1.4.amzn1
+      state: present
+
+  - name: Start service httpd, if not started
+    service:
+      name: httpd
+      state: started
+  
+
